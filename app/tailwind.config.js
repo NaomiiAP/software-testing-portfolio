@@ -1,0 +1,71 @@
+/** @type {import('tailwindcss').Config} */
+// "Night Express" design system - Indian Railways navy + saffron, mint for confirmed (Trainline-style success).
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        ink: '#0B1220',
+        muted: '#5B6780',
+        line: '#E2E7F0',
+        mist: '#F4F6FA',
+        navy: {
+          50: '#F2F5FD',
+          100: '#E6ECFB',
+          200: '#C7D3F5',
+          300: '#97AEEB',
+          400: '#5F80DB',
+          500: '#2F5BE0',
+          600: '#1B45B0',
+          700: '#13307A',
+          800: '#0E2150',
+          900: '#0A1633',
+          950: '#050B1A',
+        },
+        saffron: {
+          50: '#FFF6EE',
+          100: '#FFEAD8',
+          200: '#FFD0A8',
+          300: '#FFB577',
+          400: '#FF9B4D',
+          500: '#FF7A1A',
+          600: '#EA5A0C',
+          700: '#C2440A',
+        },
+        mint: { 50: '#ECFBF7', 100: '#D5F5EE', 500: '#00A88F', 600: '#008C77', 700: '#006E5E' },
+        amber: { 50: '#FFF9EB', 100: '#FEF1D6', 500: '#F5A524', 600: '#D98A0B', 700: '#A86A06' },
+        rose: { 50: '#FFF1F2', 100: '#FDE2E3', 500: '#E5484D', 600: '#CC2F35', 700: '#A3242A' },
+      },
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans Variable"', 'system-ui', 'Segoe UI', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'Consolas', 'monospace'],
+      },
+      boxShadow: {
+        card: '0 1px 2px rgba(11,18,32,.05), 0 10px 30px -14px rgba(11,18,32,.22)',
+        lift: '0 2px 4px rgba(11,18,32,.06), 0 24px 48px -18px rgba(11,18,32,.35)',
+        glow: '0 10px 30px -10px rgba(255,122,26,.65)',
+        ring: '0 0 0 4px rgba(47,91,224,.14)',
+      },
+      keyframes: {
+        shimmer: { '0%': { transform: 'translateX(-120%)' }, '100%': { transform: 'translateX(220%)' } },
+        float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-8px)' } },
+        pulseRing: { '0%': { transform: 'scale(.8)', opacity: '.7' }, '100%': { transform: 'scale(2.4)', opacity: '0' } },
+        drift: { '0%,100%': { transform: 'translate(0,0) scale(1)' }, '50%': { transform: 'translate(30px,-20px) scale(1.08)' } },
+        twinkle: { '0%,100%': { opacity: '.25' }, '50%': { opacity: '1' } },
+        dash: { to: { strokeDashoffset: '0' } },
+        rollBy: { '0%': { transform: 'translateX(-30%)' }, '100%': { transform: 'translateX(130vw)' } },
+        rise: { '0%': { transform: 'translateY(12px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } },
+      },
+      animation: {
+        shimmer: 'shimmer 2.4s ease-in-out infinite',
+        float: 'float 5s ease-in-out infinite',
+        'pulse-ring': 'pulseRing 1.8s ease-out infinite',
+        drift: 'drift 14s ease-in-out infinite',
+        twinkle: 'twinkle 3s ease-in-out infinite',
+        'roll-by': 'rollBy 18s linear infinite',
+        rise: 'rise .5s cubic-bezier(.2,.8,.2,1) both',
+      },
+    },
+  },
+  plugins: [],
+};

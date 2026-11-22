@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ Night Express
+   Navy + saffron (Indian Railways identity), mint for confirmed tickets.
+   Every animation is wrapped in motion-safe / prefers-reduced-motion so the
+   Selenium suite (Chrome --force-prefers-reduced-motion) sees final states. */
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  body {
+    @apply bg-mist text-ink font-sans antialiased;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+  ::selection {
+    @apply bg-saffron-200 text-ink;
+  }
+  :focus-visible {
+    @apply outline-none ring-4 ring-navy-500/25;
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-2xl border border-line shadow-card;
+  }
+
+  .btn {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold text-sm
+           transition-[transform,background-color,box-shadow,border-color,color] duration-150 ease-out
+           active:scale-[0.97] select-none overflow-hidden;
+  }
+  .btn:disabled {
+    @apply opacity-45 cursor-not-allowed active:scale-100 shadow-none;
+  }
+  .btn-primary {
+    @apply btn bg-saffron-500 text-white shadow-glow hover:bg-saffron-600;
+  }
+  /* light sweep across primary buttons on hover */
+  .btn-primary::after {
+    content: '';
+    @apply absolute inset-y-0 -left-1/2 w-1/3 skew-x-[-20deg] bg-white/30 opacity-0 pointer-events-none;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .btn-primary:hover:not(:disabled)::after {
+      @apply opacity-100 animate-shimmer;
+    }
+  }
+  .btn-dark {
+    @apply btn bg-navy-900 text-white hover:bg-navy-800 shadow-card;
+  }
+  .btn-secondary {
+    @apply btn bg-white text-ink border border-line hover:border-navy-300 hover:bg-navy-50;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent text-navy-700 hover:bg-navy-50;
+  }
+  .btn-danger {
+    @apply btn bg-rose-500 text-white hover:bg-rose-600;
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-line bg-white px-4 py-3 text-ink font-medium placeholder:text-muted/70
+           transition-[border-color,box-shadow] duration-150 outline-none;
+  }
+  .field:hover {
+    @apply border-navy-300;
+  }
+  .field:focus {
+    @apply border-navy-500 shadow-ring;
+  }
+  .field[aria-invalid='true'] {
+    @apply border-rose-500 bg-rose-50/40;
+  }
+
+  .label {
+    @apply block text-[11px] font-bold uppercase tracking-[.08em] text-muted mb-1.5;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold;
+  }
+
+  .link {
+    @apply font-semibold text-navy-600 underline-offset-4 hover:underline;
+  }
+
+  .hero-grid {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  /* ticket perforation between the stub and the body */
+  .perforation {
+    @apply relative border-t-2 border-dashed border-line;
+  }
+  .perforation::before,
+  .perforation::after {
+    content: '';
+    @apply absolute -top-[13px] h-6 w-6 rounded-full bg-mist;
+  }
+  .perforation::before {
+    @apply -left-[13px];
+  }
+  .perforation::after {
+    @apply -right-[13px];
+  }
+}
+
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+  .print-ticket {
+    box-shadow: none !important;
+    border-color: #cbd5e1 !important;
+  }
+}
+
+@keyframes toastbar {
+  from { transform: scaleX(1); }
+  to { transform: scaleX(0); }
+}
+
+@keyframes flow {
+  to { stroke-dashoffset: -140; }
+}
+@keyframes sleepers {
+  from { background-position: 0 0; }
+  to { background-position: -20px 0; }
+}
