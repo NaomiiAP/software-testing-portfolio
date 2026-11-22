@@ -1,0 +1,23 @@
+# dependencies / envs
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+
+# build output
+dist/
+app/dist/
+
+# mutation testing sandbox
+.stryker-tmp/
+reports/
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Selenium download folder
+.e2e-downloads/
