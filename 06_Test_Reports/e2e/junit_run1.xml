@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="26" time="272.273" timestamp="2026-11-23T19:13:11.151642+05:30" hostname="ice"><testcase classname="05_Test_Automation.selenium.test_e2e_auth" name="test_TC_E2E_09_booking_requires_login_and_returns" time="5.997" /><testcase classname="05_Test_Automation.selenium.test_e2e_auth" name="test_TC_E2E_10_account_locks_after_three_failures" time="9.441" /><testcase classname="05_Test_Automation.selenium.test_e2e_auth" name="test_TC_E2E_11_registration_validation_and_new_account" time="15.496" /><testcase classname="05_Test_Automation.selenium.test_e2e_auth" name="test_TC_E2E_12_logout_protects_my_bookings" time="7.977" /><testcase classname="05_Test_Automation.selenium.test_e2e_booking" name="test_TC_E2E_13_passenger_and_contact_validation" time="10.536" /><testcase classname="05_Test_Automation.selenium.test_e2e_booking" name="test_TC_E2E_14_maximum_six_passengers" time="10.158" /><testcase classname="05_Test_Automation.selenium.test_e2e_booking" name="test_TC_E2E_15_family_booking_confirmed_with_concessions" time="14.188" /><testcase classname="05_Test_Automation.selenium.test_e2e_booking" name="test_TC_E2E_16_payment_validation" time="13.819" /><testcase classname="05_Test_Automation.selenium.test_e2e_booking" name="test_TC_E2E_17_allocation_cnf_rac_wl_regret" time="30.247" /><testcase classname="05_Test_Automation.selenium.test_e2e_booking" name="test_TC_E2E_18_group_too_large_rejected_before_payment" time="10.694"><failure message="AssertionError: User was sent to payment for a booking that cannot succeed&#10;assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x000002A567E461F0&gt;('/book/12951')&#10; +    where &lt;built-in method startswith of str object at 0x000002A567E461F0&gt; = '/payment'.startswith&#10; +      where '/payment' = &lt;pages.pages.BookingPage object at 0x000002A567E1F050&gt;.url_path">driver = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="6bfd78d7c0441496e213c2573fdee365")&gt;
+base_url = 'http://127.0.0.1:5173', today = datetime.date(2026, 11, 23)
+shot = &lt;function shot.&lt;locals&gt;._shot at 0x000002A567E48EA0&gt;
+
+    def test_TC_E2E_18_group_too_large_rejected_before_payment(driver, base_url, today, shot):
+        """
+        3 adults cannot fit any 1A pool on 12951 (2/2/2) - the user must be told on the
+        passenger page, not after entering payment details. (Found in v2.0 -&gt; DEF-V2-03.)
+        """
+        login_demo(driver, base_url)
+        booking = open_booking(driver, base_url, "12951", "MMCT", "NDLS", iso(today, 14), "1A")
+        booking.fill_passengers([Passenger("Anil Kumar", "40", "M"), Passenger("Sunita Kumar", "38", "F"),
+                                 Passenger("Rahul Kumar", "18", "M")])
+        booking.proceed()
+        shot("after_continue")
+&gt;       assert booking.url_path.startswith("/book/12951"), "User was sent to payment for a booking that cannot succeed"
+E       AssertionError: User was sent to payment for a booking that cannot succeed
+E       assert False
+E        +  where False = &lt;built-in method startswith of str object at 0x000002A567E461F0&gt;('/book/12951')
+E        +    where &lt;built-in method startswith of str object at 0x000002A567E461F0&gt; = '/payment'.startswith
+E        +      where '/payment' = &lt;pages.pages.BookingPage object at 0x000002A567E1F050&gt;.url_path
+
+05_Test_Automation\selenium\test_e2e_booking.py:103: AssertionError</failure></testcase><testcase classname="05_Test_Automation.selenium.test_e2e_navigation" name="test_TC_E2E_23_unknown_route_and_footer_pages" time="7.899" /><testcase classname="05_Test_Automation.selenium.test_e2e_navigation" name="test_TC_E2E_24_my_bookings_lists_user_tickets" time="15.660" /><testcase classname="05_Test_Automation.selenium.test_e2e_navigation" name="test_TC_E2E_25_title_and_branding" time="3.415" /><testcase classname="05_Test_Automation.selenium.test_e2e_navigation" name="test_TC_E2E_26_mobile_layout" time="4.644" /><testcase classname="05_Test_Automation.selenium.test_e2e_pnr_cancel" name="test_TC_E2E_19_pnr_enquiry" time="16.501" /><testcase classname="05_Test_Automation.selenium.test_e2e_pnr_cancel" name="test_TC_E2E_20_cancel_refund_and_promotion" time="23.527" /><testcase classname="05_Test_Automation.selenium.test_e2e_pnr_cancel" name="test_TC_E2E_21_keep_ticket_leaves_it_unchanged" time="12.338" /><testcase classname="05_Test_Automation.selenium.test_e2e_pnr_cancel" name="test_TC_E2E_22_download_eticket_pdf" time="12.312" /><testcase classname="05_Test_Automation.selenium.test_e2e_search" name="test_TC_E2E_01_valid_search_lists_trains" time="5.067" /><testcase classname="05_Test_Automation.selenium.test_e2e_search" name="test_TC_E2E_02_same_source_and_destination_rejected" time="2.685" /><testcase classname="05_Test_Automation.selenium.test_e2e_search" name="test_TC_E2E_03_journey_date_lower_boundary" time="5.351" /><testcase classname="05_Test_Automation.selenium.test_e2e_search" name="test_TC_E2E_04_journey_date_upper_boundary" time="5.034" /><testcase classname="05_Test_Automation.selenium.test_e2e_search" name="test_TC_E2E_05_tatkal_only_for_tomorrow" time="5.371" /><testcase classname="05_Test_Automation.selenium.test_e2e_search" name="test_TC_E2E_06_weekly_train_only_on_running_day" time="5.438" /><testcase classname="05_Test_Automation.selenium.test_e2e_search" name="test_TC_E2E_07_timetable_filter_is_stable" time="8.432" /><testcase classname="05_Test_Automation.selenium.test_e2e_search" name="test_TC_E2E_08_departed_trains_not_bookable_today" time="9.430"><failure message="AssertionError: Train 12127 already left at 06:40 but is bookable&#10;assert not True&#10; +  where True = book_enabled('12127')&#10; +    where book_enabled = &lt;pages.pages.ResultsPage object at 0x000002A567E67CB0&gt;.book_enabled">driver = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="6bfd78d7c0441496e213c2573fdee365")&gt;
+base_url = 'http://127.0.0.1:5173', today = datetime.date(2026, 11, 23)
+shot = &lt;function shot.&lt;locals&gt;._shot at 0x000002A567E8A0C0&gt;
+
+    def test_TC_E2E_08_departed_trains_not_bookable_today(driver, base_url, today, shot):
+        """
+        A train whose departure time today has already passed must not be bookable.
+        (Found during exploratory testing of v2.0 -&gt; DEF-V2-02.)
+        Route CSMT-&gt;PUNE has departures at 06:40 and 20:30.
+        """
+        results = ResultsPage(driver, base_url).open_search("CSMT", "PUNE", iso(today, 0))
+        now = dt.datetime.now().strftime("%H:%M")
+        checked = 0
+        for train in results.train_numbers():
+            if results.departure(train) &lt;= now:
+                checked += 1
+&gt;               assert not results.book_enabled(train), f"Train {train} already left at {results.departure(train)} but is bookable"
+E               AssertionError: Train 12127 already left at 06:40 but is bookable
+E               assert not True
+E                +  where True = book_enabled('12127')
+E                +    where book_enabled = &lt;pages.pages.ResultsPage object at 0x000002A567E67CB0&gt;.book_enabled
+
+05_Test_Automation\selenium\test_e2e_search.py:98: AssertionError</failure></testcase></testsuite></testsuites>
