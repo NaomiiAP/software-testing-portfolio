@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="363" failures="0" errors="0" time="0.7145606">
+    <testsuite name="05_Test_Automation/unit-tests/components.integration.test.tsx" timestamp="2026-11-24T08:41:40.926Z" hostname="ice" tests="18" failures="0" errors="0" skipped="0" time="0.47715">
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Search form &gt; TC_IT_01 (regression D02): same source and destination shows an error and does not navigate" time="0.0958125">
+            <system-err>
+You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled
+⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+            </system-err>
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Search form &gt; TC_IT_02 (regression D01): a valid search navigates to the results URL" time="0.0480925">
+            <system-err>
+No routes matched location &quot;/trains?from=MMCT&amp;to=NDLS&amp;date=2026-12-01&amp;quota=GN&quot; 
+
+            </system-err>
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Search form &gt; TC_IT_03 (regression D03): date picker is limited to today .. today+120" time="0.0122238">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Search form &gt; TC_IT_04: swap button exchanges source and destination" time="0.0256583">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Train results &gt; TC_IT_05 (regression D11): each result offers a Book button and class availability" time="0.0367686">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Train results &gt; TC_IT_06 (regression D09): filtering All Trains by a listed number keeps that train" time="0.0418561">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Train results &gt; TC_IT_07: invalid URL parameters show the validation message instead of results" time="0.0099246">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Train results &gt; TC_IT_08: Book Now when logged out redirects to login with a return URL" time="0.0171628">
+            <system-err>
+No routes matched location &quot;/login?next=%2Fbook%2F12951%3Ffrom%3DMMCT%26to%3DNDLS%26date%3D2026-12-04%26class%3D3A%26quota%3DGN&quot; 
+
+            </system-err>
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="PNR status &gt; TC_IT_09: malformed PNR shows a validation message" time="0.0074943">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="PNR status &gt; TC_IT_10 (regression D06): a PNR that was never booked is reported as not found" time="0.0055446">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="PNR status &gt; TC_IT_11 (regression D07): a booked PNR shows the same booking on every enquiry" time="0.0175801">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Authentication &gt; TC_IT_12: wrong password shows remaining attempts, third failure locks the account" time="0.0596051">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Authentication &gt; TC_IT_13: correct credentials log in and return to the requested page" time="0.0286753">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Authentication &gt; TC_IT_14: an external ?next= URL is ignored (no open redirect)" time="0.0234318">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Authentication &gt; TC_IT_15 (regression D12): protected pages redirect anonymous users to login" time="0.0049195">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Fixes for defects found in v2.0 &gt; TC_IT_17 (regression DEF-V2-02): trains that already left today are marked Departed and not bookable" time="0.0249545">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Fixes for defects found in v2.0 &gt; TC_IT_18 (regression DEF-V2-04): &quot;All Trains&quot; is highlighted only on the timetable, not on search results" time="0.0108106">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/components.integration.test.tsx" name="Routing &gt; TC_IT_16 (regression D13): unknown routes render the Not Found page" time="0.0043469">
+        </testcase>
+    </testsuite>
+    <testsuite name="05_Test_Automation/unit-tests/fare.test.ts" timestamp="2026-11-24T08:41:40.945Z" hostname="ice" tests="45" failures="0" errors="0" skipped="0" time="0.0389387">
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession decision table (age band x gender x quota) &gt; &apos;TC_DT_CON_01&apos; (&apos;R1&apos;): age 3, &apos;M&apos;, &apos;GN&apos; -&gt; &apos;CHILD_FREE&apos;" time="0.0025585">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession decision table (age band x gender x quota) &gt; &apos;TC_DT_CON_02&apos; (&apos;R1&apos;): age 3, &apos;F&apos;, &apos;TQ&apos; -&gt; &apos;CHILD_FREE&apos;" time="0.0002793">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession decision table (age band x gender x quota) &gt; &apos;TC_DT_CON_03&apos; (&apos;R2&apos;): age 8, &apos;M&apos;, &apos;GN&apos; -&gt; &apos;CHILD_HALF&apos;" time="0.0001975">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession decision table (age band x gender x quota) &gt; &apos;TC_DT_CON_04&apos; (&apos;R3&apos;): age 8, &apos;F&apos;, &apos;TQ&apos; -&gt; &apos;NONE&apos;" time="0.0001335">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession decision table (age band x gender x quota) &gt; &apos;TC_DT_CON_05&apos; (&apos;R4&apos;): age 30, &apos;M&apos;, &apos;GN&apos; -&gt; &apos;NONE&apos;" time="0.0001504">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession decision table (age band x gender x quota) &gt; &apos;TC_DT_CON_06&apos; (&apos;R5&apos;): age 58, &apos;F&apos;, &apos;GN&apos; -&gt; &apos;SENIOR_FEMALE&apos;" time="0.0001254">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession decision table (age band x gender x quota) &gt; &apos;TC_DT_CON_07&apos; (&apos;R6&apos;): age 58, &apos;M&apos;, &apos;GN&apos; -&gt; &apos;NONE&apos;" time="0.0000929">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession decision table (age band x gender x quota) &gt; &apos;TC_DT_CON_08&apos; (&apos;R5&apos;): age 65, &apos;F&apos;, &apos;GN&apos; -&gt; &apos;SENIOR_FEMALE&apos;" time="0.0000915">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession decision table (age band x gender x quota) &gt; &apos;TC_DT_CON_09&apos; (&apos;R7&apos;): age 65, &apos;M&apos;, &apos;GN&apos; -&gt; &apos;SENIOR_MALE&apos;" time="0.0001255">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession decision table (age band x gender x quota) &gt; &apos;TC_DT_CON_10&apos; (&apos;R7&apos;): age 65, &apos;T&apos;, &apos;GN&apos; -&gt; &apos;SENIOR_MALE&apos;" time="0.0000825">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession decision table (age band x gender x quota) &gt; &apos;TC_DT_CON_11&apos; (&apos;R8&apos;): age 65, &apos;F&apos;, &apos;TQ&apos; -&gt; &apos;NONE&apos;" time="0.0000752">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession decision table (age band x gender x quota) &gt; &apos;TC_DT_CON_12&apos; (&apos;R8&apos;): age 65, &apos;M&apos;, &apos;TQ&apos; -&gt; &apos;NONE&apos;" time="0.0000736">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession decision table (age band x gender x quota) &gt; &apos;TC_DT_CON_13&apos; (&apos;R4&apos;): age 30, &apos;F&apos;, &apos;TQ&apos; -&gt; &apos;NONE&apos;" time="0.0000878">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession age boundaries (BVA) &gt; &apos;TC_BVA_CON_01&apos;: age 4 (&apos;M&apos;, General) -&gt; &apos;CHILD_FREE&apos;" time="0.0001866">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession age boundaries (BVA) &gt; &apos;TC_BVA_CON_02&apos;: age 5 (&apos;M&apos;, General) -&gt; &apos;CHILD_HALF&apos;" time="0.0001214">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession age boundaries (BVA) &gt; &apos;TC_BVA_CON_03&apos;: age 11 (&apos;M&apos;, General) -&gt; &apos;CHILD_HALF&apos;" time="0.0000965">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession age boundaries (BVA) &gt; &apos;TC_BVA_CON_04&apos;: age 12 (&apos;M&apos;, General) -&gt; &apos;NONE&apos;" time="0.0000814">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession age boundaries (BVA) &gt; &apos;TC_BVA_CON_05&apos;: age 57 (&apos;F&apos;, General) -&gt; &apos;NONE&apos;" time="0.0000713">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession age boundaries (BVA) &gt; &apos;TC_BVA_CON_06&apos;: age 58 (&apos;F&apos;, General) -&gt; &apos;SENIOR_FEMALE&apos;" time="0.0000857">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession age boundaries (BVA) &gt; &apos;TC_BVA_CON_07&apos;: age 59 (&apos;M&apos;, General) -&gt; &apos;NONE&apos;" time="0.0000433">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Concession age boundaries (BVA) &gt; &apos;TC_BVA_CON_08&apos;: age 60 (&apos;M&apos;, General) -&gt; &apos;SENIOR_MALE&apos;" time="0.0000393">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Base fare &gt; TC_UT_FARE_01: distance x class rate, rounded (1384 km)" time="0.0003015">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Base fare &gt; &apos;TC_BVA_MINFARE_01&apos;: SL 199 km -&gt; ₹120 (&apos;119.4 -&gt; raised to minimum 120&apos;)" time="0.0001579">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Base fare &gt; &apos;TC_BVA_MINFARE_02&apos;: SL 200 km -&gt; ₹120 (&apos;exactly the minimum&apos;)" time="0.0000802">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Base fare &gt; &apos;TC_BVA_MINFARE_03&apos;: SL 201 km -&gt; ₹121 (&apos;120.6 -&gt; 121 above minimum&apos;)" time="0.0000704">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Base fare &gt; &apos;TC_EP_DIST_01&apos;: distance +0 is rejected" time="0.0011948">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Base fare &gt; &apos;TC_EP_DIST_02&apos;: distance -10 is rejected" time="0.000209">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Base fare &gt; &apos;TC_EP_DIST_03&apos;: distance NaN is rejected" time="0.0001057">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Tatkal premium clamp, SL min ₹100 / max ₹200 (BVA) &gt; &apos;TC_BVA_TQ_01&apos;: base ₹330 -&gt; ₹100 (&apos;30% = 99 -&gt; raised to min&apos;)" time="0.0002307">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Tatkal premium clamp, SL min ₹100 / max ₹200 (BVA) &gt; &apos;TC_BVA_TQ_02&apos;: base ₹334 -&gt; ₹100 (&apos;30% = 100.2 -&gt; 100 (at min)&apos;)" time="0.0000823">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Tatkal premium clamp, SL min ₹100 / max ₹200 (BVA) &gt; &apos;TC_BVA_TQ_03&apos;: base ₹337 -&gt; ₹101 (&apos;30% = 101.1 -&gt; 101 (just above min)&apos;)" time="0.0000634">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Tatkal premium clamp, SL min ₹100 / max ₹200 (BVA) &gt; &apos;TC_BVA_TQ_04&apos;: base ₹663 -&gt; ₹199 (&apos;30% = 198.9 -&gt; 199 (just below max)&apos;)" time="0.0000847">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Tatkal premium clamp, SL min ₹100 / max ₹200 (BVA) &gt; &apos;TC_BVA_TQ_05&apos;: base ₹667 -&gt; ₹200 (&apos;30% = 200.1 -&gt; 200 (at max)&apos;)" time="0.0000601">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Tatkal premium clamp, SL min ₹100 / max ₹200 (BVA) &gt; &apos;TC_BVA_TQ_06&apos;: base ₹670 -&gt; ₹200 (&apos;30% = 201 -&gt; capped at max&apos;)" time="0.0000565">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Per-passenger fare &gt; TC_UT_FARE_02: 1A General adult = base + 5% GST" time="0.001953">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Per-passenger fare &gt; TC_UT_FARE_03: Sleeper is non-AC so no GST is charged" time="0.0002897">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Per-passenger fare &gt; TC_UT_FARE_04: Sleeper Tatkal adds the capped premium" time="0.0001995">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Per-passenger fare &gt; TC_UT_FARE_05: 3A Tatkal = base + premium(capped 400) + GST on both" time="0.0001977">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Per-passenger fare &gt; TC_UT_FARE_06: senior male 40% concession, GST on the reduced fare" time="0.0001529">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Per-passenger fare &gt; TC_UT_FARE_07: child 5-11 pays half" time="0.0001227">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Per-passenger fare &gt; TC_UT_FARE_08: child below 5 travels free without a berth" time="0.0001388">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Booking fare &gt; TC_UT_FARE_09: family booking total = passenger totals + ₹20 convenience fee" time="0.0006584">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Booking fare &gt; TC_UT_FARE_10: a booking with no passengers is rejected" time="0.0002881">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Booking fare &gt; TC_UT_FARE_11: children below 5 do not need a berth" time="0.0002287">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/fare.test.ts" name="Booking fare &gt; TC_UT_FARE_12: amounts are shown in Indian rupee format" time="0.0244269">
+        </testcase>
+    </testsuite>
+    <testsuite name="05_Test_Automation/unit-tests/mutationGaps.test.ts" timestamp="2026-11-24T08:41:40.954Z" hostname="ice" tests="30" failures="0" errors="0" skipped="0" time="0.0410761">
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Validation - inputs with surrounding spaces / extra characters &gt; TC_UT_MUT_01: age, mobile, email, UPI and expiry are trimmed (kills .trim() removal)" time="0.0028066">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Validation - inputs with surrounding spaces / extra characters &gt; TC_UT_MUT_02: e-mail regex - multi-level domains valid, 1-letter TLD and trailing dot invalid" time="0.000719">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Validation - inputs with surrounding spaces / extra characters &gt; TC_UT_MUT_03: UPI and expiry patterns are anchored at both ends (kills ^ / $ removal)" time="0.0003784">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Validation - inputs with surrounding spaces / extra characters &gt; TC_BVA_CARD_01: 17-digit and 12-digit numbers that pass Luhn are still rejected (length check)" time="0.0004564">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Validation - inputs with surrounding spaces / extra characters &gt; &apos;TC_BVA_EXP_01&apos;: expiry &apos;05/26&apos; on 15 Jun 2026 (&apos;same year, previous month&apos;)" time="0.0002277">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Validation - inputs with surrounding spaces / extra characters &gt; &apos;TC_BVA_EXP_02&apos;: expiry &apos;06/26&apos; on 15 Jun 2026 (&apos;same year, current month&apos;)" time="0.0001243">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Validation - inputs with surrounding spaces / extra characters &gt; &apos;TC_BVA_EXP_03&apos;: expiry &apos;07/26&apos; on 15 Jun 2026 (&apos;same year, next month&apos;)" time="0.0000994">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Validation - inputs with surrounding spaces / extra characters &gt; &apos;TC_BVA_EXP_04&apos;: expiry &apos;05/27&apos; on 15 Jun 2026 (&apos;next year, earlier month number&apos;)" time="0.0001093">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Dates &gt; TC_UT_MUT_04: ISO date pattern is anchored (extra characters rejected)" time="0.0006817">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Dates &gt; TC_UT_MUT_05: the error names the offending argument" time="0.0014806">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="User-facing texts and error types &gt; TC_UT_MUT_06: concession labels shown on tickets" time="0.0008126">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="User-facing texts and error types &gt; TC_UT_MUT_07: refund policy texts" time="0.0001692">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="User-facing texts and error types &gt; TC_UT_MUT_08: status labels and error class names" time="0.0014538">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="User-facing texts and error types &gt; TC_UT_MUT_09: rupee amounts are rounded to whole rupees" time="0.0188885">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Availability details &gt; TC_UT_MUT_10: kind and count are reported, not only the label" time="0.0004091">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Occupancy isolation &gt; TC_UT_MUT_11: other trains, other classes and cancelled tickets do not count" time="0.0020827">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Occupancy isolation &gt; TC_UT_MUT_12: berth numbering restarts for a different train run" time="0.0003711">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Booking boundaries &gt; TC_BVA_BOOK_01: exactly 6 passengers can be booked together" time="0.0008509">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Booking boundaries &gt; &apos;TC_BVA_BOOK_02&apos;: oldest passenger aged 11 -&gt; accepted=false (must be older than 11)" time="0.000377">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Booking boundaries &gt; &apos;TC_BVA_BOOK_03&apos;: oldest passenger aged 12 -&gt; accepted=true (must be older than 11)" time="0.0002978">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Booking boundaries &gt; TC_BVA_BOOK_04: booking exactly at the departure minute is refused, one minute earlier is accepted" time="0.0004641">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Booking boundaries &gt; TC_UT_MUT_13: passenger names are stored trimmed" time="0.0002535">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Booking boundaries &gt; TC_UT_MUT_14: unknown train in helper functions fails safely" time="0.0003835">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Promotion details &gt; TC_UT_MUT_15: a promoted ticket gets the freed berth, not its old RAC number" time="0.0008782">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Promotion details &gt; TC_UT_MUT_16: FIFO uses booking time, not list position" time="0.0004676">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Promotion details &gt; TC_UT_MUT_17: WL is not promoted when RAC is still full" time="0.0006133">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Promotion details &gt; TC_UT_MUT_18: children below 5 are not charged the per-passenger cancellation fee" time="0.0011771">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Chart preparation details &gt; TC_BVA_CHART_01: exactly 4 h before departure the chart is prepared" time="0.0005083">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Chart preparation details &gt; TC_UT_MUT_19: chart keeps confirmed berths and does not add a refund to CNF tickets" time="0.0005605">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/mutationGaps.test.ts" name="Chart preparation details &gt; TC_UT_MUT_20: WL auto-cancel deducts clerkage only for paying passengers" time="0.0004956">
+        </testcase>
+    </testsuite>
+    <testsuite name="05_Test_Automation/unit-tests/refund.test.ts" timestamp="2026-11-24T08:41:40.959Z" hostname="ice" tests="22" failures="0" errors="0" skipped="0" time="0.0093168">
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund decision table (status x quota x time before departure) &gt; &apos;TC_DT_REF_01&apos;: &apos;CNF&apos;/&apos;GN&apos;, 72 h -&gt; &apos;FLAT&apos;, refund ₹1640" time="0.003445">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund decision table (status x quota x time before departure) &gt; &apos;TC_DT_REF_02&apos;: &apos;CNF&apos;/&apos;GN&apos;, 24 h -&gt; &apos;PCT_25&apos;, refund ₹1500" time="0.0003298">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund decision table (status x quota x time before departure) &gt; &apos;TC_DT_REF_03&apos;: &apos;CNF&apos;/&apos;GN&apos;, 8 h -&gt; &apos;PCT_50&apos;, refund ₹1000" time="0.0001583">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund decision table (status x quota x time before departure) &gt; &apos;TC_DT_REF_04&apos;: &apos;CNF&apos;/&apos;GN&apos;, 2 h -&gt; &apos;NO_REFUND_CHART&apos;, refund ₹+0" time="0.0000791">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund decision table (status x quota x time before departure) &gt; &apos;TC_DT_REF_05&apos;: &apos;CNF&apos;/&apos;TQ&apos;, 72 h -&gt; &apos;NO_REFUND_TATKAL&apos;, refund ₹+0" time="0.0000825">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund decision table (status x quota x time before departure) &gt; &apos;TC_DT_REF_06&apos;: &apos;RAC&apos;/&apos;GN&apos;, 24 h -&gt; &apos;CLERKAGE&apos;, refund ₹1880" time="0.000092">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund decision table (status x quota x time before departure) &gt; &apos;TC_DT_REF_07&apos;: &apos;WL&apos;/&apos;TQ&apos;, 2 h -&gt; &apos;CLERKAGE&apos;, refund ₹1880" time="0.0000604">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund decision table (status x quota x time before departure) &gt; &apos;TC_DT_REF_08&apos;: &apos;RAC&apos;/&apos;GN&apos;, 0.25 h -&gt; &apos;NO_REFUND_LATE&apos;, refund ₹+0" time="0.0000577">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund decision table (status x quota x time before departure) &gt; &apos;TC_DT_REF_09&apos;: &apos;CNF&apos;/&apos;GN&apos;, 24 h -&gt; &apos;PCT_25&apos;, refund ₹640" time="0.0000915">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund decision table (status x quota x time before departure) &gt; &apos;TC_DT_REF_10&apos;: &apos;CNF&apos; ticket after departure (+0 h) cannot be cancelled" time="0.0004316">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund decision table (status x quota x time before departure) &gt; &apos;TC_DT_REF_11&apos;: &apos;WL&apos; ticket after departure (-1 h) cannot be cancelled" time="0.0001666">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund decision table (status x quota x time before departure) &gt; TC_UT_REF_01: deduction never exceeds the fare (flat charge larger than a tiny fare)" time="0.0002042">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund time boundaries (BVA) &gt; &apos;TC_BVA_REF_01&apos;: confirmed ticket cancelled 48.01 h before departure -&gt; &apos;FLAT&apos;" time="0.0002724">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund time boundaries (BVA) &gt; &apos;TC_BVA_REF_02&apos;: confirmed ticket cancelled 48 h before departure -&gt; &apos;PCT_25&apos;" time="0.0001064">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund time boundaries (BVA) &gt; &apos;TC_BVA_REF_03&apos;: confirmed ticket cancelled 12.01 h before departure -&gt; &apos;PCT_25&apos;" time="0.0001063">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund time boundaries (BVA) &gt; &apos;TC_BVA_REF_04&apos;: confirmed ticket cancelled 12 h before departure -&gt; &apos;PCT_50&apos;" time="0.0000808">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund time boundaries (BVA) &gt; &apos;TC_BVA_REF_05&apos;: confirmed ticket cancelled 4.01 h before departure -&gt; &apos;PCT_50&apos;" time="0.0000623">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund time boundaries (BVA) &gt; &apos;TC_BVA_REF_06&apos;: confirmed ticket cancelled 4 h before departure -&gt; &apos;NO_REFUND_CHART&apos;" time="0.0000419">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund time boundaries (BVA) &gt; &apos;TC_BVA_REF_07&apos;: confirmed ticket cancelled 0.01 h before departure -&gt; &apos;NO_REFUND_CHART&apos;" time="0.0000839">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund time boundaries (BVA) &gt; TC_BVA_REF_08: exactly at departure (0 h) cancellation is refused" time="0.0009048">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund time boundaries (BVA) &gt; &apos;TC_BVA_REF_09&apos;: RAC ticket cancelled 0.5 h before departure -&gt; &apos;CLERKAGE&apos;" time="0.0001163">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/refund.test.ts" name="Refund time boundaries (BVA) &gt; &apos;TC_BVA_REF_10&apos;: RAC ticket cancelled 0.49 h before departure -&gt; &apos;NO_REFUND_LATE&apos;" time="0.0000681">
+        </testcase>
+    </testsuite>
+    <testsuite name="05_Test_Automation/unit-tests/reservation.test.ts" timestamp="2026-11-24T08:41:40.963Z" hostname="ice" tests="51" failures="0" errors="0" skipped="0" time="0.0251015">
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Allocation decision table (inventory 2 berths / 2 RAC / 2 WL) &gt; &apos;TC_DT_ALLOC_01&apos;: need 2 with occupancy +0/+0/+0 -&gt; &apos;CNF&apos;" time="0.0020918">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Allocation decision table (inventory 2 berths / 2 RAC / 2 WL) &gt; &apos;TC_DT_ALLOC_02&apos;: need 1 with occupancy 2/+0/+0 -&gt; &apos;RAC&apos;" time="0.0002554">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Allocation decision table (inventory 2 berths / 2 RAC / 2 WL) &gt; &apos;TC_DT_ALLOC_03&apos;: need 2 with occupancy 2/2/+0 -&gt; &apos;WL&apos;" time="0.000155">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Allocation decision table (inventory 2 berths / 2 RAC / 2 WL) &gt; &apos;TC_DT_ALLOC_04&apos;: need 1 with occupancy 2/2/2 -&gt; &apos;REGRET&apos;" time="0.0001504">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Allocation decision table (inventory 2 berths / 2 RAC / 2 WL) &gt; &apos;TC_DT_ALLOC_05&apos;: need 3 with occupancy +0/+0/+0 -&gt; &apos;REGRET&apos;" time="0.0001484">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Allocation decision table (inventory 2 berths / 2 RAC / 2 WL) &gt; &apos;TC_DT_ALLOC_06&apos;: need 2 with occupancy 1/+0/+0 -&gt; &apos;RAC&apos;" time="0.0001185">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Allocation boundaries (BVA, 40 berths, 38 booked -&gt; 2 free) &gt; &apos;TC_BVA_ALLOC_01&apos;: 1 seat(s) requested -&gt; &apos;CNF&apos;" time="0.0002059">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Allocation boundaries (BVA, 40 berths, 38 booked -&gt; 2 free) &gt; &apos;TC_BVA_ALLOC_02&apos;: 2 seat(s) requested -&gt; &apos;CNF&apos;" time="0.0001147">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Allocation boundaries (BVA, 40 berths, 38 booked -&gt; 2 free) &gt; &apos;TC_BVA_ALLOC_03&apos;: 3 seat(s) requested -&gt; &apos;RAC&apos;" time="0.0001631">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Availability label and slot numbering &gt; &apos;TC_UT_AVL_01&apos;: -&gt; &quot;&apos;AVAILABLE 2&apos;&quot;" time="0.0002783">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Availability label and slot numbering &gt; &apos;TC_UT_AVL_02&apos;: -&gt; &quot;&apos;RAC 1&apos;&quot;" time="0.0001064">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Availability label and slot numbering &gt; &apos;TC_UT_AVL_03&apos;: -&gt; &quot;&apos;WL 1&apos;&quot;" time="0.0000839">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Availability label and slot numbering &gt; &apos;TC_UT_AVL_04&apos;: -&gt; &quot;&apos;WL 2&apos;&quot;" time="0.0000986">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Availability label and slot numbering &gt; &apos;TC_UT_AVL_05&apos;: -&gt; &quot;&apos;REGRET&apos;&quot;" time="0.0000795">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Availability label and slot numbering &gt; TC_UT_SLOT_01: smallest free slots are allocated first" time="0.0012538">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Availability label and slot numbering &gt; &apos;TC_BVA_BERTH_01&apos;: 3A slot +0 -&gt; &apos;B1/1&apos; (64 berths per coach)" time="0.0003125">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Availability label and slot numbering &gt; &apos;TC_BVA_BERTH_02&apos;: 3A slot 63 -&gt; &apos;B1/64&apos; (64 berths per coach)" time="0.0001133">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Availability label and slot numbering &gt; &apos;TC_BVA_BERTH_03&apos;: 3A slot 64 -&gt; &apos;B2/1&apos; (64 berths per coach)" time="0.0000823">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Availability label and slot numbering &gt; TC_UT_SLOT_02: RAC / WL / no-berth / cancelled labels" time="0.0002952">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; TC_UT_BOOK_01: first booking is confirmed with berths, fare and departure time" time="0.0028225">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; TC_UT_BOOK_02: CNF -&gt; RAC -&gt; WL as the train fills, then REGRET" time="0.0020202">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; TC_UT_BOOK_03: child below 5 does not consume a berth" time="0.0005688">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; TC_UT_BOOK_04: boarding mid-route shares inventory with the same train run" time="0.0004901">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; &apos;TC_UT_BOOK_05&apos;: rejected - &apos;Train not found&apos;" time="0.0002921">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; &apos;TC_UT_BOOK_06&apos;: rejected - &apos;This train does not run between the s…&apos;" time="0.0001837">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; &apos;TC_UT_BOOK_07&apos;: rejected - &apos;Selected class is not available on th…&apos;" time="0.0002459">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; &apos;TC_UT_BOOK_08&apos;: rejected - &apos;Journey date cannot be in the past&apos;" time="0.0001913">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; &apos;TC_UT_BOOK_09&apos;: rejected - &apos;Bookings open only 120 days in advance&apos;" time="0.0002075">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; &apos;TC_UT_BOOK_10&apos;: rejected - &apos;Tatkal tickets can be booked only one…&apos;" time="0.000199">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; &apos;TC_UT_BOOK_11&apos;: rejected - &apos;This train does not run on the select…&apos;" time="0.0001841">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; &apos;TC_UT_BOOK_12&apos;: rejected - &apos;A booking must have between 1 and 6 p…&apos;" time="0.0002398">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; &apos;TC_UT_BOOK_13&apos;: rejected - &apos;A booking must have between 1 and 6 p…&apos;" time="0.0002202">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; &apos;TC_UT_BOOK_14&apos;: rejected - &apos;At least one passenger must be older …&apos;" time="0.0002023">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; &apos;TC_UT_BOOK_15&apos;: rejected - &apos;This train has already departed from …&apos;" time="0.0002147">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; TC_UT_BOOK_16: Tatkal for tomorrow and the weekly train on its running day are accepted" time="0.0004639">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="createBooking &gt; TC_UT_BOOK_17: occupancy counts only seats of active bookings of the same run" time="0.0003645">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="cancelBooking and FIFO promotion &gt; TC_UT_CAN_01: cancelling CNF refunds and promotes RAC -&gt; CNF and WL -&gt; RAC" time="0.001516">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="cancelBooking and FIFO promotion &gt; TC_UT_CAN_02: cancelling RAC deducts clerkage and promotes WL -&gt; RAC" time="0.001318">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="cancelBooking and FIFO promotion &gt; TC_UT_CAN_03: strict FIFO - a 2-seat RAC PNR is not promoted into 1 free berth" time="0.0005272">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="cancelBooking and FIFO promotion &gt; TC_UT_CAN_04: unknown PNR and already-cancelled tickets are rejected" time="0.0006667">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="cancelBooking and FIFO promotion &gt; TC_UT_CAN_05: cancelling after departure is refused" time="0.0017165">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="cancelBooking and FIFO promotion &gt; TC_UT_CAN_06: promoteWaiting with no free capacity changes nothing" time="0.0002604">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Chart preparation (4 h before departure) &gt; TC_UT_CHART_01: more than 4 h before departure nothing changes" time="0.0003274">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Chart preparation (4 h before departure) &gt; TC_UT_CHART_02: CNF and RAC are frozen, WL is auto-cancelled with clerkage refund" time="0.0003414">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Chart preparation (4 h before departure) &gt; TC_UT_CHART_03: chart preparation is idempotent and skips cancelled tickets" time="0.0002289">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Departed trains (regression DEF-V2-02) &gt; &apos;TC_BVA_DEP_01&apos;: 06:40 train, &apos;1 minute before departure&apos; -&gt; departed=false" time="0.0000975">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Departed trains (regression DEF-V2-02) &gt; &apos;TC_BVA_DEP_02&apos;: 06:40 train, &apos;at the departure minute&apos; -&gt; departed=true" time="0.0000458">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Departed trains (regression DEF-V2-02) &gt; &apos;TC_BVA_DEP_03&apos;: 06:40 train, &apos;1 minute after departure&apos; -&gt; departed=true" time="0.0000391">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Departed trains (regression DEF-V2-02) &gt; &apos;TC_BVA_DEP_04&apos;: 06:40 train, &apos;evening before the journey day&apos; -&gt; departed=false" time="0.0000365">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Helpers &gt; TC_UT_RES_01: hours to departure" time="0.0001322">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/reservation.test.ts" name="Helpers &gt; TC_UT_RES_02: max booking date is today + 120 days" time="0.000081">
+        </testcase>
+    </testsuite>
+    <testsuite name="05_Test_Automation/unit-tests/stateTransition.test.ts" timestamp="2026-11-24T08:41:40.971Z" hostname="ice" tests="27" failures="0" errors="0" skipped="0" time="0.0139742">
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - valid transitions &gt; &apos;TC_ST_TKT_01&apos;: &apos;WL&apos; --&apos;PROMOTE&apos;--&gt; &apos;RAC&apos;" time="0.0022752">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - valid transitions &gt; &apos;TC_ST_TKT_02&apos;: &apos;RAC&apos; --&apos;PROMOTE&apos;--&gt; &apos;CNF&apos;" time="0.0022258">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - valid transitions &gt; &apos;TC_ST_TKT_03&apos;: &apos;WL&apos; --&apos;CANCEL&apos;--&gt; &apos;CAN&apos;" time="0.0001288">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - valid transitions &gt; &apos;TC_ST_TKT_04&apos;: &apos;RAC&apos; --&apos;CANCEL&apos;--&gt; &apos;CAN&apos;" time="0.0000809">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - valid transitions &gt; &apos;TC_ST_TKT_05&apos;: &apos;CNF&apos; --&apos;CANCEL&apos;--&gt; &apos;CAN&apos;" time="0.0000878">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - valid transitions &gt; &apos;TC_ST_TKT_06&apos;: &apos;WL&apos; --&apos;CHART_PREPARED&apos;--&gt; &apos;CAN&apos;" time="0.0000727">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - valid transitions &gt; &apos;TC_ST_TKT_07&apos;: &apos;RAC&apos; --&apos;CHART_PREPARED&apos;--&gt; &apos;RAC&apos;" time="0.0000679">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - valid transitions &gt; &apos;TC_ST_TKT_08&apos;: &apos;CNF&apos; --&apos;CHART_PREPARED&apos;--&gt; &apos;CNF&apos;" time="0.0000737">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - invalid transitions are rejected &gt; &apos;TC_ST_TKT_09&apos;: &apos;CNF&apos; --&apos;PROMOTE&apos;--&gt; error" time="0.0005494">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - invalid transitions are rejected &gt; &apos;TC_ST_TKT_10&apos;: &apos;CAN&apos; --&apos;PROMOTE&apos;--&gt; error" time="0.0001653">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - invalid transitions are rejected &gt; &apos;TC_ST_TKT_11&apos;: &apos;CAN&apos; --&apos;CANCEL&apos;--&gt; error" time="0.0001206">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - invalid transitions are rejected &gt; &apos;TC_ST_TKT_12&apos;: &apos;CAN&apos; --&apos;CHART_PREPARED&apos;--&gt; error" time="0.0000699">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - invalid transitions are rejected &gt; TC_ST_TKT_13: the error names the event and the current status" time="0.0014932">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - event sequences &gt; TC_ST_TKT_14: WL -&gt; RAC -&gt; CNF -&gt; CAN (promoted twice then cancelled)" time="0.0021473">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - event sequences &gt; TC_ST_TKT_15: RAC frozen at chart, then cancelled" time="0.0001565">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Ticket status - event sequences &gt; TC_ST_TKT_16: a cancelled ticket cannot be revived by a later promotion" time="0.0001265">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Login lock-out state machine &gt; TC_ST_LOGIN_01: S0 + correct password -&gt; logged in" time="0.0002325">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Login lock-out state machine &gt; TC_ST_LOGIN_02: S0 + wrong password -&gt; S1 (2 attempts left)" time="0.0001099">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Login lock-out state machine &gt; TC_ST_LOGIN_03: S1 + wrong password -&gt; S2 (1 attempt left)" time="0.0001142">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Login lock-out state machine &gt; TC_ST_LOGIN_04: S2 + wrong password -&gt; LOCKED for 15 minutes" time="0.0001205">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Login lock-out state machine &gt; TC_ST_LOGIN_05: S2 + correct password -&gt; logged in and counter reset" time="0.0000661">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Login lock-out state machine &gt; TC_ST_LOGIN_06: LOCKED + correct password before expiry -&gt; still LOCKED" time="0.0000671">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Login lock-out state machine &gt; TC_ST_LOGIN_07: LOCKED + wrong password before expiry -&gt; still LOCKED (no extension)" time="0.0000592">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Login lock-out state machine &gt; TC_ST_LOGIN_08 (BVA): 1 ms before expiry -&gt; LOCKED" time="0.0000791">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Login lock-out state machine &gt; TC_ST_LOGIN_09 (BVA): exactly at expiry -&gt; login allowed" time="0.000074">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Login lock-out state machine &gt; TC_ST_LOGIN_10: wrong password after expiry -&gt; counter restarts at 1" time="0.0000852">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/stateTransition.test.ts" name="Login lock-out state machine &gt; TC_ST_LOGIN_11: three consecutive failures from S0 end in LOCKED" time="0.0001214">
+        </testcase>
+    </testsuite>
+    <testsuite name="05_Test_Automation/unit-tests/store.test.ts" timestamp="2026-11-24T08:41:40.975Z" hostname="ice" tests="8" failures="0" errors="0" skipped="0" time="0.0086281">
+        <testcase classname="05_Test_Automation/unit-tests/store.test.ts" name="Users and session &gt; TC_UT_STORE_01: the demo account always exists, even on a fresh browser" time="0.0025742">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/store.test.ts" name="Users and session &gt; TC_UT_STORE_02: registered users persist; duplicate usernames are refused" time="0.0019695">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/store.test.ts" name="Users and session &gt; TC_UT_STORE_03: session is stored and cleared" time="0.000495">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/store.test.ts" name="Users and session &gt; TC_UT_STORE_04: login lock-out state is kept per username (case-insensitive)" time="0.0003279">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/store.test.ts" name="Robustness &gt; TC_UT_STORE_05: corrupted storage falls back to defaults instead of crashing" time="0.0006182">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/store.test.ts" name="Robustness &gt; TC_UT_STORE_06: PNR sequence advances only when the booking is committed" time="0.0003448">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/store.test.ts" name="Robustness &gt; TC_UT_STORE_07: booking draft round-trips through sessionStorage and can be cleared" time="0.0004614">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/store.test.ts" name="Robustness &gt; TC_UT_STORE_08: findBooking returns undefined for unknown PNRs" time="0.0003196">
+        </testcase>
+    </testsuite>
+    <testsuite name="05_Test_Automation/unit-tests/trains.test.ts" timestamp="2026-11-24T08:41:40.976Z" hostname="ice" tests="41" failures="0" errors="0" skipped="0" time="0.0753982">
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Train search &gt; TC_UT_SRCH_01: Mumbai Central -&gt; New Delhi finds the Rajdhani" time="0.0063878">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Train search &gt; TC_UT_SRCH_02: results are sorted by departure time" time="0.0007884">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Train search &gt; TC_UT_SRCH_03: direction matters - reverse route returns the opposite train" time="0.0004377">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Train search &gt; TC_UT_SRCH_04: weekly train appears only on its running day (Sunday)" time="0.0005839">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Train search &gt; TC_UT_SRCH_05: Howrah Rajdhani does not run on Sunday" time="0.0005623">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Train search &gt; TC_UT_SRCH_06: boarding on day 2 of a journey checks the origin running day" time="0.0007547">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Train search &gt; TC_UT_SRCH_07 (regression D10): the same search always returns the same trains" time="0.0004829">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Train search &gt; TC_UT_SRCH_08: stations with no connecting train return no results" time="0.0002864">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Journey details &gt; TC_UT_JRNY_01: distance, duration and next-day arrival" time="0.0009035">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Journey details &gt; TC_UT_JRNY_02: intermediate segment uses the stop distances" time="0.0003264">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Journey details &gt; TC_UT_JRNY_03: reverse order or unknown station gives no journey" time="0.0005762">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Journey details &gt; TC_UT_JRNY_04: running-day labels" time="0.0006178">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12951&apos; has valid stops, increasing distance and time, and at least one class" time="0.0011202">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12952&apos; has valid stops, increasing distance and time, and at least one class" time="0.000522">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12301&apos; has valid stops, increasing distance and time, and at least one class" time="0.000465">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12627&apos; has valid stops, increasing distance and time, and at least one class" time="0.0004414">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12621&apos; has valid stops, increasing distance and time, and at least one class" time="0.0005105">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12163&apos; has valid stops, increasing distance and time, and at least one class" time="0.0004019">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12127&apos; has valid stops, increasing distance and time, and at least one class" time="0.0003581">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12933&apos; has valid stops, increasing distance and time, and at least one class" time="0.0005013">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12957&apos; has valid stops, increasing distance and time, and at least one class" time="0.0004635">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12958&apos; has valid stops, increasing distance and time, and at least one class" time="0.0004483">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12229&apos; has valid stops, increasing distance and time, and at least one class" time="0.0003993">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12230&apos; has valid stops, increasing distance and time, and at least one class" time="0.0004633">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12723&apos; has valid stops, increasing distance and time, and at least one class" time="0.0007798">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;12841&apos; has valid stops, increasing distance and time, and at least one class" time="0.0002492">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;22691&apos; has valid stops, increasing distance and time, and at least one class" time="0.0004402">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; &apos;TC_UT_DATA_01&apos;: train &apos;11098&apos; has valid stops, increasing distance and time, and at least one class" time="0.0002832">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; TC_UT_DATA_02: train numbers and station codes are unique" time="0.0001968">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Timetable data integrity (static checks) &gt; TC_UT_DATA_03: station lookup and labels" time="0.0002209">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Date utilities &gt; TC_UT_DATE_01: ISO formatting and validity (leap years, impossible dates)" time="0.0046058">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Date utilities &gt; TC_UT_DATE_02: day arithmetic across month and year ends" time="0.0004324">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Date utilities &gt; TC_UT_DATE_03: invalid dates raise errors in arithmetic helpers" time="0.0019421">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="Date utilities &gt; TC_UT_DATE_04: combining date + time with day offset, hours between" time="0.0267314">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="PNR generation &gt; TC_UT_PNR_01: known values for the first sequence numbers" time="0.0004349">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="PNR generation &gt; TC_UT_PNR_02: 10 000 consecutive PNRs are unique, 10 digits and pass PNR validation" time="0.0149426">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="PNR generation &gt; &apos;TC_BVA_PNR_01&apos;: sequence +0 valid=false" time="0.0007063">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="PNR generation &gt; &apos;TC_BVA_PNR_02&apos;: sequence 1 valid=true" time="0.0002385">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="PNR generation &gt; &apos;TC_BVA_PNR_03&apos;: sequence 999999999 valid=true" time="0.0001463">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="PNR generation &gt; &apos;TC_BVA_PNR_04&apos;: sequence 1000000000 valid=false" time="0.0001172">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/trains.test.ts" name="PNR generation &gt; &apos;TC_EP_PNRSEQ_01&apos;: sequence 1.5 valid=false" time="0.0000787">
+        </testcase>
+    </testsuite>
+    <testsuite name="05_Test_Automation/unit-tests/validation.bva.test.ts" timestamp="2026-11-24T08:41:40.981Z" hostname="ice" tests="34" failures="0" errors="0" skipped="0" time="0.0087443">
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Age 1-120 (BVA) &gt; &apos;TC_BVA_AGE_01&apos;: age +0" time="0.0024326">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Age 1-120 (BVA) &gt; &apos;TC_BVA_AGE_02&apos;: age 1" time="0.0002885">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Age 1-120 (BVA) &gt; &apos;TC_BVA_AGE_03&apos;: age 2" time="0.0001731">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Age 1-120 (BVA) &gt; &apos;TC_BVA_AGE_04&apos;: age 119" time="0.0001552">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Age 1-120 (BVA) &gt; &apos;TC_BVA_AGE_05&apos;: age 120" time="0.0001301">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Age 1-120 (BVA) &gt; &apos;TC_BVA_AGE_06&apos;: age 121" time="0.000115">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Journey date: today .. today+120 (BVA) &gt; &apos;TC_BVA_DATE_01&apos;: today -1 days" time="0.0005389">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Journey date: today .. today+120 (BVA) &gt; &apos;TC_BVA_DATE_02&apos;: today +0 days" time="0.0001056">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Journey date: today .. today+120 (BVA) &gt; &apos;TC_BVA_DATE_03&apos;: today 1 days" time="0.0000822">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Journey date: today .. today+120 (BVA) &gt; &apos;TC_BVA_DATE_04&apos;: today 119 days" time="0.0000557">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Journey date: today .. today+120 (BVA) &gt; &apos;TC_BVA_DATE_05&apos;: today 120 days" time="0.0000533">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Journey date: today .. today+120 (BVA) &gt; &apos;TC_BVA_DATE_06&apos;: today 121 days" time="0.000051">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Passengers per booking 1-6 (BVA) &gt; &apos;TC_BVA_PAX_01&apos;: +0 passengers" time="0.0002009">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Passengers per booking 1-6 (BVA) &gt; &apos;TC_BVA_PAX_02&apos;: 1 passengers" time="0.0002259">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Passengers per booking 1-6 (BVA) &gt; &apos;TC_BVA_PAX_03&apos;: 2 passengers" time="0.0001011">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Passengers per booking 1-6 (BVA) &gt; &apos;TC_BVA_PAX_04&apos;: 5 passengers" time="0.0000804">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Passengers per booking 1-6 (BVA) &gt; &apos;TC_BVA_PAX_05&apos;: 6 passengers" time="0.0000778">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Passengers per booking 1-6 (BVA) &gt; &apos;TC_BVA_PAX_06&apos;: 7 passengers" time="0.0000729">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Name length 3-40 (BVA) &gt; &apos;TC_BVA_NAME_01&apos;: 2 characters" time="0.0002473">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Name length 3-40 (BVA) &gt; &apos;TC_BVA_NAME_02&apos;: 3 characters" time="0.0001008">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Name length 3-40 (BVA) &gt; &apos;TC_BVA_NAME_03&apos;: 4 characters" time="0.0000701">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Name length 3-40 (BVA) &gt; &apos;TC_BVA_NAME_04&apos;: 39 characters" time="0.0000711">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Name length 3-40 (BVA) &gt; &apos;TC_BVA_NAME_05&apos;: 40 characters" time="0.0000531">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Name length 3-40 (BVA) &gt; &apos;TC_BVA_NAME_06&apos;: 41 characters" time="0.0000374">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Password length 8-20 (BVA) &gt; &apos;TC_BVA_PWD_01&apos;: 7 characters" time="0.0001631">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Password length 8-20 (BVA) &gt; &apos;TC_BVA_PWD_02&apos;: 8 characters" time="0.0000929">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Password length 8-20 (BVA) &gt; &apos;TC_BVA_PWD_03&apos;: 9 characters" time="0.0000877">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Password length 8-20 (BVA) &gt; &apos;TC_BVA_PWD_04&apos;: 19 characters" time="0.000044">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Password length 8-20 (BVA) &gt; &apos;TC_BVA_PWD_05&apos;: 20 characters" time="0.0000376">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Password length 8-20 (BVA) &gt; &apos;TC_BVA_PWD_06&apos;: 21 characters" time="0.0000362">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Username length 4-15 (BVA) &gt; &apos;TC_BVA_USER_01&apos;: 3 characters" time="0.0001616">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Username length 4-15 (BVA) &gt; &apos;TC_BVA_USER_02&apos;: 4 characters" time="0.0000729">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Username length 4-15 (BVA) &gt; &apos;TC_BVA_USER_03&apos;: 15 characters" time="0.0000405">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.bva.test.ts" name="Username length 4-15 (BVA) &gt; &apos;TC_BVA_USER_04&apos;: 16 characters" time="0.0000692">
+        </testcase>
+    </testsuite>
+    <testsuite name="05_Test_Automation/unit-tests/validation.ep.test.ts" timestamp="2026-11-24T08:41:40.986Z" hostname="ice" tests="87" failures="0" errors="0" skipped="0" time="0.0162327">
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger name (EP) &gt; &apos;TC_EP_NAME_01&apos;: &apos;valid: letters and spaces&apos;" time="0.0023453">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger name (EP) &gt; &apos;TC_EP_NAME_02&apos;: &apos;valid: with dot&apos;" time="0.0003085">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger name (EP) &gt; &apos;TC_EP_NAME_03&apos;: &apos;invalid: empty&apos;" time="0.0001513">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger name (EP) &gt; &apos;TC_EP_NAME_04&apos;: &apos;invalid: whitespace only&apos;" time="0.0001079">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger name (EP) &gt; &apos;TC_EP_NAME_05&apos;: &apos;invalid: too short&apos;" time="0.0001252">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger name (EP) &gt; &apos;TC_EP_NAME_06&apos;: &apos;invalid: too long&apos;" time="0.0000991">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger name (EP) &gt; &apos;TC_EP_NAME_07&apos;: &apos;invalid: contains digit&apos;" time="0.000085">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger name (EP) &gt; &apos;TC_EP_NAME_08&apos;: &apos;invalid: special character&apos;" time="0.0000872">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger name (EP) &gt; &apos;TC_EP_NAME_09&apos;: &apos;invalid: starts with non-letter&apos;" time="0.0001153">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger age (EP) &gt; &apos;TC_EP_AGE_01&apos;: &apos;valid: whole number in range&apos;" time="0.0002622">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger age (EP) &gt; &apos;TC_EP_AGE_02&apos;: &apos;valid: numeric type&apos;" time="0.0001108">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger age (EP) &gt; &apos;TC_EP_AGE_03&apos;: &apos;invalid: empty&apos;" time="0.0000781">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger age (EP) &gt; &apos;TC_EP_AGE_04&apos;: &apos;invalid: non-numeric&apos;" time="0.0000914">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger age (EP) &gt; &apos;TC_EP_AGE_05&apos;: &apos;invalid: decimal&apos;" time="0.0000732">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger age (EP) &gt; &apos;TC_EP_AGE_06&apos;: &apos;invalid: negative&apos;" time="0.0000769">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger age (EP) &gt; &apos;TC_EP_AGE_07&apos;: &apos;invalid: above range&apos;" time="0.0000667">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger gender (EP) &gt; &apos;TC_EP_GEN_01&apos;: gender &quot;&apos;M&apos;&quot;" time="0.0001603">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger gender (EP) &gt; &apos;TC_EP_GEN_02&apos;: gender &quot;&apos;F&apos;&quot;" time="0.0000707">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger gender (EP) &gt; &apos;TC_EP_GEN_03&apos;: gender &quot;&apos;T&apos;&quot;" time="0.0001117">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger gender (EP) &gt; &apos;TC_EP_GEN_04&apos;: gender &quot;&apos;&apos;&quot;" time="0.0000818">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger gender (EP) &gt; &apos;TC_EP_GEN_05&apos;: gender &quot;&apos;X&apos;&quot;" time="0.0000662">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger gender (EP) &gt; TC_EP_GEN_06: validatePassenger collects one error per invalid field" time="0.0013127">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Stations (EP) &gt; &apos;TC_EP_STN_01&apos;: &apos;valid: two different stations&apos;" time="0.0001949">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Stations (EP) &gt; &apos;TC_EP_STN_02&apos;: &apos;invalid: source missing&apos;" time="0.000091">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Stations (EP) &gt; &apos;TC_EP_STN_03&apos;: &apos;invalid: destination missing&apos;" time="0.0000665">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Stations (EP) &gt; &apos;TC_EP_STN_04&apos;: &apos;invalid: same station&apos;" time="0.0000635">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Journey date (EP, today = 2026-01-05) &gt; &apos;TC_EP_DATE_01&apos;: &apos;valid: inside booking window&apos;" time="0.0005289">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Journey date (EP, today = 2026-01-05) &gt; &apos;TC_EP_DATE_02&apos;: &apos;invalid: empty&apos;" time="0.0000821">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Journey date (EP, today = 2026-01-05) &gt; &apos;TC_EP_DATE_03&apos;: &apos;invalid: impossible calendar date&apos;" time="0.0000778">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Journey date (EP, today = 2026-01-05) &gt; &apos;TC_EP_DATE_04&apos;: &apos;invalid: wrong format&apos;" time="0.0000592">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Journey date (EP, today = 2026-01-05) &gt; &apos;TC_EP_DATE_05&apos;: &apos;invalid: past date&apos;" time="0.0000799">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Journey date (EP, today = 2026-01-05) &gt; &apos;TC_EP_DATE_06&apos;: &apos;invalid: beyond 120 days&apos;" time="0.0000981">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Quota vs journey date (EP) &gt; &apos;TC_EP_QUOTA_01&apos;: &apos;valid: General, any date&apos;" time="0.0001676">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Quota vs journey date (EP) &gt; &apos;TC_EP_QUOTA_02&apos;: &apos;valid: Tatkal for tomorrow&apos;" time="0.0000768">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Quota vs journey date (EP) &gt; &apos;TC_EP_QUOTA_03&apos;: &apos;invalid: Tatkal for today&apos;" time="0.0000645">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Quota vs journey date (EP) &gt; &apos;TC_EP_QUOTA_04&apos;: &apos;invalid: Tatkal for a later date&apos;" time="0.000144">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger count (EP) &gt; &apos;TC_EP_CNT_01&apos;: &apos;valid: 1-6&apos;" time="0.0001614">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger count (EP) &gt; &apos;TC_EP_CNT_02&apos;: &apos;invalid: below range&apos;" time="0.0000753">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger count (EP) &gt; &apos;TC_EP_CNT_03&apos;: &apos;invalid: above range&apos;" time="0.0000602">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Passenger count (EP) &gt; &apos;TC_EP_CNT_04&apos;: &apos;invalid: fractional&apos;" time="0.0000593">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="PNR (EP) &gt; &apos;TC_EP_PNR_01&apos;: &apos;valid: 10 digits&apos;" time="0.000207">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="PNR (EP) &gt; &apos;TC_EP_PNR_02&apos;: &apos;valid: surrounding spaces trimmed&apos;" time="0.0000861">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="PNR (EP) &gt; &apos;TC_EP_PNR_03&apos;: &apos;invalid: empty&apos;" time="0.0000632">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="PNR (EP) &gt; &apos;TC_EP_PNR_04&apos;: &apos;invalid: contains letter&apos;" time="0.00006">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="PNR (EP) &gt; &apos;TC_EP_PNR_05&apos;: &apos;invalid: too short&apos;" time="0.0000658">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="PNR (EP) &gt; &apos;TC_EP_PNR_06&apos;: &apos;invalid: too long&apos;" time="0.0000574">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Mobile number (EP) &gt; &apos;TC_EP_MOB_01&apos;: &apos;valid: 10 digits starting 6-9&apos;" time="0.0001877">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Mobile number (EP) &gt; &apos;TC_EP_MOB_02&apos;: &apos;invalid: starts with 0-5&apos;" time="0.0001012">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Mobile number (EP) &gt; &apos;TC_EP_MOB_03&apos;: &apos;invalid: too short&apos;" time="0.00006">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Mobile number (EP) &gt; &apos;TC_EP_MOB_04&apos;: &apos;invalid: too long&apos;" time="0.000066">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Mobile number (EP) &gt; &apos;TC_EP_MOB_05&apos;: &apos;invalid: letters&apos;" time="0.0000914">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Email (EP) &gt; &apos;TC_EP_MAIL_01&apos;: &apos;valid&apos;" time="0.0002369">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Email (EP) &gt; &apos;TC_EP_MAIL_02&apos;: &apos;invalid: no @&apos;" time="0.000117">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Email (EP) &gt; &apos;TC_EP_MAIL_03&apos;: &apos;invalid: no domain&apos;" time="0.0000752">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Email (EP) &gt; &apos;TC_EP_MAIL_04&apos;: &apos;invalid: no local part&apos;" time="0.0000639">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Email (EP) &gt; &apos;TC_EP_MAIL_05&apos;: &apos;invalid: no top-level domain&apos;" time="0.0000573">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Email (EP) &gt; &apos;TC_EP_MAIL_06&apos;: &apos;invalid: space&apos;" time="0.0000644">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Username (EP) &gt; &apos;TC_EP_USER_01&apos;: &apos;valid&apos;" time="0.0001775">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Username (EP) &gt; &apos;TC_EP_USER_02&apos;: &apos;invalid: too short&apos;" time="0.0001015">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Username (EP) &gt; &apos;TC_EP_USER_03&apos;: &apos;invalid: starts with digit&apos;" time="0.0000752">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Username (EP) &gt; &apos;TC_EP_USER_04&apos;: &apos;invalid: space&apos;" time="0.0000691">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Username (EP) &gt; &apos;TC_EP_USER_05&apos;: &apos;invalid: too long&apos;" time="0.0000672">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Password (EP) &gt; &apos;TC_EP_PWD_01&apos;: &apos;valid: all character classes&apos;" time="0.0002456">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Password (EP) &gt; &apos;TC_EP_PWD_02&apos;: &apos;invalid: no upper case&apos;" time="0.0001039">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Password (EP) &gt; &apos;TC_EP_PWD_03&apos;: &apos;invalid: no lower case&apos;" time="0.0000856">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Password (EP) &gt; &apos;TC_EP_PWD_04&apos;: &apos;invalid: no digit&apos;" time="0.0000785">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Password (EP) &gt; &apos;TC_EP_PWD_05&apos;: &apos;invalid: no special character&apos;" time="0.000083">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Password (EP) &gt; &apos;TC_EP_PWD_06&apos;: &apos;invalid: too short&apos;" time="0.0000582">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_UPI_01&apos;: UPI &apos;valid&apos;" time="0.0002075">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_UPI_02&apos;: UPI &apos;invalid: no handle&apos;" time="0.0001173">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_UPI_03&apos;: UPI &apos;invalid: no name&apos;" time="0.0000745">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_UPI_04&apos;: UPI &apos;invalid: digit in handle&apos;" time="0.0000587">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_CARD_01&apos;: card &apos;valid: Visa test number&apos;" time="0.0003002">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_CARD_02&apos;: card &apos;valid: Mastercard test number&apos;" time="0.0001454">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_CARD_03&apos;: card &apos;invalid: Luhn checksum fails&apos;" time="0.0001133">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_CARD_04&apos;: card &apos;invalid: 15 digits&apos;" time="0.000086">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_CARD_05&apos;: card &apos;invalid: letter&apos;" time="0.0001008">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_EXP_01&apos;: expiry &apos;valid: future month&apos;" time="0.0002862">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_EXP_02&apos;: expiry &apos;valid: current month&apos;" time="0.0001205">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_EXP_03&apos;: expiry &apos;invalid: past month&apos;" time="0.0000754">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_EXP_04&apos;: expiry &apos;invalid: month 13&apos;" time="0.000076">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_EXP_05&apos;: expiry &apos;invalid: month 00&apos;" time="0.0000603">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_EXP_06&apos;: expiry &apos;invalid: format&apos;" time="0.0000581">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_CVV_01&apos;: CVV &quot;&apos;123&apos;&quot;" time="0.0001747">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_CVV_02&apos;: CVV &quot;&apos;12&apos;&quot;" time="0.0001031">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_CVV_03&apos;: CVV &quot;&apos;1234&apos;&quot;" time="0.000069">
+        </testcase>
+        <testcase classname="05_Test_Automation/unit-tests/validation.ep.test.ts" name="Payment inputs (EP) &gt; &apos;TC_EP_CVV_04&apos;: CVV &quot;&apos;12a&apos;&quot;" time="0.0000573">
+        </testcase>
+    </testsuite>
+</testsuites>
